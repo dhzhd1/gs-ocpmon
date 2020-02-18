@@ -18,7 +18,8 @@ import socket
 import os
 import sys
 import subprocess as sub
-import urllib,urllib2
+import urllib
+from urllib import request
 
 from gs_ocpmon.platform import Plat
 from gs_ocpmon.utils import misc
@@ -33,7 +34,7 @@ class HTTPPost(object):
             return misc.json_file_to_dict(configFile)
         except IOError as e:
             logger.info("IOError loading Config file : {0}".format(e))
-            print "IOError loading Config File"
+            print("IOError loading Config File")
 
     @classmethod
     def notify (cls,message, severity, alertgroup=None,alerttype='http',installer=None,category=None, platform='UNIX', division=None, bu=None, vars_list=None):
@@ -53,20 +54,27 @@ class HTTPPost(object):
                 raise RuntimeError( "No configured HTTPPost-URL ")
         else :
             raise RuntimeError( "No configured HTTPPost-URL ")
-        host = socket. gethostname()
+        host = socket.gethostname()
+        _plat = Plat()
+        platform = _plat.platform
         if vars_list:
             vars_str = ','.join(str(x) for x in vars_list)
         status_alert_dict_original = {}
         status_alert_dict_original.update({'message' : message ,'division' : division , 'bu' :bu ,'severity' : severity ,'alertgroup': alertgroup ,'installer' : installer ,'category': category ,'platform':platform,'host': host,'alerttype' :alerttype, 'varslist' : vars_str })
-        status_alert_dict =  dict((k, v) for k, v in status_alert_dict_original.iteritems() if v is not None)
+        status_alert_dict =  dict((k, v) for k, v in status_alert_dict_original.items() if v is not None)
         status_alert_json = misc.dict_to_json(status_alert_dict)
-        req = urllib2.Request(post_uri,status_alert_json,{'Content-Type': 'application/json'})
-        response = urllib2.urlopen(req)
+        print(status_alert_json)
+        req = urllib.request.Request(post_uri,status_alert_json.encode("utf-8"),{'Content-Type': 'application/json'})
+        print(req)
+        response = urllib.request.urlopen(req)
         rc = response.getcode()
+        print(rc)
         logger.info("Http-Post returncode = {0}".format(rc))
 
-        if rc != 201:
-            logger.critical("Http-Post failed:\n\tcommand: {0}\n\treturn code:{1}\n\tstderr: {2}".format(command, rc, cmd_err))
+        # Below condiftion should be adjusted by the actually web service design.
+        if rc != 200:
+            # logger.critical("Http-Post failed:\n\tcommand: {0}\n\treturn code:{1}\n\tstderr: {2}".format(command, rc, cmd_err))
+            logger.critical("Http-Post failed:\n\tcommand: {0}\n\treturn code:{1}\n\tstderr: {2}".format("failed-command-from-webservice", rc, "failed-information-passed-from-webservice"))
             return 1
         else:
             return 0

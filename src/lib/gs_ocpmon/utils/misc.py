@@ -41,7 +41,8 @@ def runcmd(cmd, env=None):
         from pprint import pformat
         logger.debug("running {0} with env = {1}".format(cmd, pformat(env)))
     logger.info("running {0}".format(cmd))
-    shlex_cmd = shlex.split(cmd.encode('utf-8'))
+    # shlex_cmd = shlex.split(cmd.encode('utf-8'))
+    shlex_cmd = shlex.split(cmd)
     cmd = sub.Popen(shlex_cmd, stdout=sub.PIPE, stderr=sub.PIPE, env=env)
 
     (cmd_out, cmd_err) = cmd.communicate()
@@ -53,15 +54,15 @@ def runcmd(cmd, env=None):
 
 
 def dict_to_json_file(thedict, filename):
-    with open(filename, 'wb') as f:
+    with open(filename, 'w') as f:
         print(json.dumps(thedict, sort_keys=True, indent=2), file=f)
 
 def dict_to_json(thedict):
     return json.dumps(thedict)
 
 def json_file_to_dict(filename):
-    with open(filename, 'rb') as f:
-        return json.load(f)
+    with open(filename, 'r') as f:
+        return json.loads(f.read())
 
 def get_key_for_nearest_match(product, product_map_keys):
     if product in product_map_keys:

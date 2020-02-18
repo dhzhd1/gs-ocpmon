@@ -1,0 +1,21 @@
+[ESXi Firewall Modification]
+For use the script on ESXi, related outgoing port (if other than 80 for a webservice alert) need to be configured.
+Modify the /etc/vmware/firewall/service.xml. Add the proper outgoing rules on this firewall difination configuration
+file. eg.
+  <!-- Alert service restful api -->
+  <service id='0045'>
+   <id>alert-system</id>
+   <rule>
+    <direction>outbound</direction>
+    <protocol>tcp</protocol>
+    <porttype>dst</porttype>
+    <port>5000</port>
+   </rule>
+   <enabled>true</enabled>
+   <required>false</required>
+  </service>
+Save the file and run the below command to take effect.
+# esxcli network firewall refresh
+
+
+

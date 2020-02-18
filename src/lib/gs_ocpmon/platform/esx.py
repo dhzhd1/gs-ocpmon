@@ -1,4 +1,4 @@
-# (C) Copyright 2016, Goldman Sachs. All rights reserved.
+# (C) Copyright 2020, AMAX Information Technologies, Inc. All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,46 +21,52 @@ from gs_ocpmon.utils import ExeWrapper
 logger = logging.getLogger("root")
 
 
-class DmiDecode(ExeWrapper):
+class SmbiosDump(ExeWrapper):
 
     def __init__(self):
-        super(DmiDecode, self).__init__("dmidecode", {
-            "name": "dmidecode",
+        super(SmbiosDump, self).__init__("smbiosDump", {
+            "name": "smbiosDump",
             "path": "",
             "ld_library_path": "",
-            "cmdline": "/usr/sbin/dmidecode",
+            "cmdline": "/bin/smbiosDump",
             "commands": {
-                "by_keyword": {
-                    "args": "--string %s",
-                    "label": "Get DMI field by keyword",
+                "filter": {
+                    "args": "%s",
+                    "label": "Get DMI field by filter",
                     "type": "exitcode"
                 }
             }
         })
 
     def get_baseboard_manufacturer(self):
-        return self.runcmd("by_keyword", "baseboard-manufacturer")
+        filter_str = ' | grep -i "Board Info" -A 10 | grep -i "Manufacturer" | awk -F\\" \'{print $2}\''
+        return self.runcmd("filter", filter_str)
 
     def get_baseboard_product_name(self):
-        return self.runcmd("by_keyword", "system-product-name")
+        filter_str = ' | grep -i "Board Info" -A 10 | grep -i "Product" | awk -F\\" \'{print $2}\''
+        return self.runcmd("filter", filter_str)
 
     def get_baseboard_version(self):
-        return self.runcmd("by_keyword", "baseboard-version")
+        filter_str = ' | grep -i "Board Info" -A 10 | grep -i "Version" | awk -F\\" \'{print $2}\''
+        return self.runcmd("filter", filter_str)
 
     def get_chassis_asset_tag(self):
-        return self.runcmd("by_keyword", "chassis-asset-tag")
+        filter_str = ' | grep -i "Board Info" -A 10 | grep -i "Asset Tag" | awk -F\\" \'{print $2}\''
+        return self.runcmd("filter", filter_str)
 
     def get_chassis_serial_number(self):
-        return self.runcmd("by_keyword", "chassis-serial-number")
+        filter_str = ' | grep -i "Chassis Info" -A 10 | grep -i "Serial" | awk -F\\" \'{print $2}\''
+        return self.runcmd("filter", filter_str)
 
 
-class Linux(DmiDecode, Base):
+class Esx(SmbiosDump, Base):
     # requires root - should raise if not root
 
     default_snmptrap_port = socket.getservbyname('snmptrap')
     default_snmpd_conf_file = "/etc/snmp/snmpd.conf"
-    platform = "Linux"
+    platform = "ESXi"
 
+    # TODO: Need to revise this function since the ESXi 6.7 doesn't have the snmpd.conf
     def get_system_trapsinks(self, snmpd_conf_file=default_snmpd_conf_file, snmptrap_port=default_snmptrap_port):
 
         # trapsink trapsink.company.com privateComm 1234

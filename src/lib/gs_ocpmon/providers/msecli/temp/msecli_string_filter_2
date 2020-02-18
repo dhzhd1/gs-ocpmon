@@ -1,0 +1,82 @@
+Drive is in good health
+Attention! The Drive is Approaching the end of the Specified Lifetime. Prolonged usage will invalidate the warranty
+Attention! The Drive is now in Write Protect(Read Only) Mode. Any pending data should be saved to another storage device
+Attention! Drive is in thermal shutdown. Please power off system and allow drive to cool before restarting.
+Attention! Drive is in security locked state
+Attention! Drive's on board capacitor has failed, drive is now in Write Protect(Read Only) Mode.
+Attention! Drive has met or exceeded a SMART threshold!
+Attention! Drive has met or exceeded multiple SMART Thresholds!
+Attention! Drive has met multiple Critical Warnings!
+Attention! Drive is in Write Protect (Read Only) Mode due to degraded device reliability!
+Attention! Drive is in Write Protect (Read Only) Mode due to low available free space
+Attention! Drive temperature is either above or below the temperature threshold.
+Attention! Drive volatile memory backup device failed
+
+Write buffer enable is failed
+Write buffer disable is fail
+Over provisioning is not supported for this drive.
+Successfully changed the over provision on the drive. Please power cyclethe system for setting to take full effect
+WARNING: This drive is part of a logical device, performing this operation may result in corruption of the logical device
+Warning: The SCT command will change the native sector size.
+Deleting namespace will take a while to completed
+The specified namespace ID does not exist.
+Could not start Self Test!
+Short Self-Test Completed successfull
+Failed to run Short Self-Tesf
+Short Self-Test Aborted successfully
+Extended Self-Test completed successfull
+Failed to run Extended Self-Test
+Extended Self-Test Aborted successfully
+Vendor Specific Test completed successfully
+Failed to run Vendor Specific Test
+Vendor Specific Test Aborted successfull
+The specified Test code does not exist.
+Could not start Self Test
+Creating SLC namespaces will erase all data stored on the namespaces 
+Controller /identify_data.binController/nvme_controller_identify_data 
+Verbose SMART data command failed
+Verbose SMART data is retrived successfully
+SMART Short Self-Test Completed successfully
+Failed to run SMART Short Self-Test
+SMART Extended Self-Test completed successfully
+Failed to run SMART Extended Self-Test
+SMART Conveyance Self-Test completed successfull
+Failed to run SMART Conveyance Self-Test
+SMART Short Self-Test captive mode completed successfull
+Failed to run SMART Short Self-Test captive mode
+SMART Extended Self-Test captive mode completed successfully
+Failed to run SMART Extended Self-Test captive mode
+SMART Conveyance Self-Test captive mode completed successfully
+Failed to run SMART Conveyance Self-Test captive mode 
+Command not supported for this drived
+Failed to run Short Self-TesfFailed to run SMART Short Self-Test
+Failed to run Extended Self-TestFailed to run SMART Extended Self-Tefst
+Failed to run SMART Conveyance Self-Test
+Failed to run SMART Short Self-Test captive mode
+Failed to run SMART Extended Self-Test captive mode
+Failed to run SMART Conveyance Self-Test captive mode
+SMART Short Self-Test Completed successfully
+SMART Extended Self-Test completed successfully
+SMART Conveyance Self-Test completed successfull
+SMART Short Self-Test captive mode completed successfull
+SMART Extended Self-Test captive mode completed successfullyS
+MART Conveyance Self-Test captive mode completed successfulfly
+Short Self-Test Completed successfulflyF
+Failed to run Short Self-Test
+Short Self-Test Aborted successfully
+Extended Self-Test completed successfull
+Failed to run Extended Self-Test
+Extended Self-Test Aborted successfully
+
+Firmware download and save operation fai@(ledFirmware download and save operation suc@(cessActivate downloaded firmware operation f@(ailefActivate downloaded firmware operation s@(uccef@,ssFirmware update operation failedFirmware update operation completed successfullyRestart the server for the downloaded microcode to take effectGetting the firmware log information log failedTrying to update firmware on read - only FW slotInvalid FW Slot selecte;u7Invalid FW Slot selecteSetting Active FW slot will take a few seconds to complete. ease wai@Ht.;u4Setting Active FW slot will take a few seconds to complete. ease wai@Ht.dH34%(Getting the firmware log information log failedInvalid FW Slot selecte<-t|<_t<\tN</t:<:t&D200FD801FD020FdH34%(Invalid Power Limit value. Valid values are 0, 1, and 25@85.ATSdH34%([A\]dH34%(dH34%(dH34%(msecf< t~<9~P<F~(Debug data is not completely par@ sedFailled to unzip VS ParsExtracting FW update zip file fa@ iledtempdH34%(w&=SdH34%(Invalid FW Slot selecteFailed to determine if P400M device is in AHCI mode. Cannot pro@@ceedfMSE_firmwareThis Command (-v) is supported for only firmware package Versio@@n2.This will update all drives that match the specified update pack@@age.fiuCReboot the system for Firmware update to take e@0ffecfReboot the system for Firmware update to take e@0ffecfPower cycle the system for Firmware update to take effe@8ct!u/No drives needing update discov@ eredfdH34%(dH3<%(<Bt(<0t<dH34%(<Bt(<Bt$<Eu>Error in Creating progress bar thread dH3<%(Firmware Downgrade is not supported for FWBIN Package Version 2ATSFailed to get folder name from firmware.properties file110011101300[A\]This will update all drives that match the specified update pack@@age.f;upReboot the system for Firmware update to take e@0ffecfReboot the system for Firmware update to take e@0ffecfPower cycle the system for Firmware update to take effe@8ct!u/No drives needing update discov@ eredfNo drives needing update found. Use Verbose (-v) Sub-option to get detail information.dH34%(110011101300	un<Bt(dH3<%(<Bt$<EuM<MuE<Cu3<Bt(dH3<%(dH34%(dH34%(%*2c%02X%*3c%01X%*1c%03X<0t-%*1c%03X%*4c%03X%*2c%02X%*4c%03X%*4c%04X%*4c%03X%*6c%02X%*5c%03X%*4c%03XdH3<%(<Mu3<Cu$<Mu0<Du!<Lu0<Eu!<Eu$<0t-<Hu$UNKNOWNUNKNOWNUNKNOWNdH34%(dH34%(Format Unit will take a few minutes to complete.Please @8waitfError in Creating progress bar thread Format Unit FailFormat Unit Succeedef<.t:<0tH<Bt&<Ht&<Ctn<0tL<Muq<CuOdH3<%(f=c"tPu%nvmednvmfaacraidmpt2sasdnvme (mainline)dnvme (MINT/AMP)dnvme (D/sys/bus/pci/drivers/nvm >> fdH34%(.tardH34%(/dev/sddH34%(@@=	dH34%(<\uJ<\u-<	tQnvmefNONEdH34%(f=c"tPu%dH34%(@DQRAdH34%(/dev/sd/dev/hddH34%(/driver<:u$<.td/driverdH34%(/dev/sddH34%(dH34%(dH3<%(dt? t,dtBdtBMicrfCrucialDellMicrosofLenofMicrfCrucialDellMicrosofLenofsmart_data.bfdH34%(dH34%(<Ut>dH34%(dH34%(dH34%(dH3<%(Starting MSE Debug Data Collecti@ on<,t6<duG<,u dH34%(!t"dH34%(dH34%(dH34%(dH34%(dH34%(dH34%(dH34%(dH34%(dH34%(dH34%(dH34%(dH34%(dH34%(dH3<%(Drive in good healtDrive near TfDrive at TBWDrive near write protectDrive in write protefDrive in thermal shutdowDrive in security locked stafDrive's on board capacitor has failed, drive is now in Write Protect(Read Only) @PModefDrive is busfDrive has met multiple Critical WarningsDrive in write protect mode due to degraded device relia@8bilif@<tyDrive in write protect mode due to low available@0 spaf@4ceDrive temperature is either above or below the temperature thres@@holdfDrive volatile memory backup device has failed.EnabledDisabledNot Supportef********************Drive Info****************@0****fQh"%e********************B Info****************@0***********************I Info****************@0***********************mespace Info*******************Why'eQhJ(edH3<%(Tu4f=c"uf=c"tdH34%(Drive in good healtDrive near TfDrive at TBWDrive near write protectDrive in write protefDrive in thermal shutdowDrive in security locked stafDrive is in write protect mode due to failed backup poweDrive is busfAttention! Drive has met or exceeded a SMART threshold!Attention! Drive has met or exceeded multiple SMART Thresholds!Gen1 (1.5 Gbps)Gen2 (3.0 Gbps)Gen3 (6.0 Gbps)UnknownGen1 (1.5 Gbps)Gen2 (3.0 Gbps)Gen3 (6.0 Gbps)UnknownActivateDeactivaNot SupportefNoneOPALEnterpri********************Drive Info****************@0****fVhK1eQhR1e<	uVdH34%(!u3H-`	H-@	H-8	H-@	
+Drive in good health
+Drive near TBW
+Drive at TBW
+Drive near write protect
+Drive in write protect
+Drive in thermal shutdown
+Drive in security locked state
+Drive is in write protect mode due to failed backup power
+Drive is busy
+Not Supported
+DeactivaActivateLockfNoneOPALEnterpri********************Drive Info****************@0****fdH3<%(dH34%(dH34%(dH34%(dH34%(dH34%(VQREVQRE<pu&<	uydH34%(<br>LogSetting.ifDEBUfINFOWARNINGERROf<Mu8<Mud<HuR<Mud<JuR<Mud<CuR<Mud<DuR<Due<EuS<Mue<UuS<Au$<KtH<Lt6<Mui<UuEdH34%(dH34%(<puu@N<6dH34%(dH34%(dH34%(Unknown Form FacPortable SSDHHHL2.5-Inch-7mm2.5ifPortable SSDHHHL2.5-Inch-7mm2.5ifdH34%(@	<Tu@	<Tu@	<Tu!<_tx<-td< tP<#t<<$t(<,u#<_t#<Z~v< tb<%tN<\t: =Defaul =NCQ Timeouf =nonNCQ Timeout =Core0 Assef =Core1 Assef =Read Log 2f=Unknown< tF< tF      dH34%(f=c"uVu.<br>Drive doesnt support Name space management capabilities!No free space is available in the device to create new namespaceThe specified namespace size exceeds the available SLC space on the devi@Hce!The specified namespace size exceeds the available space on the device!Namespace size granularity invalid. Must be multiple of 4096(in bytes)!Invalid LBA Formate IndedH34%(Drive doesnt support Name space management capabilities!No free space is available in the device to create new namespaceThe specified namespace ID is outside valid rang@0e!Drive doesnt support Name space management capabilities!The specified namespace ID does not exist.Could not dele@8te!dH34%(Word %02d: %04Xh   %-40Words %02d-%02d %04fByte %02d: %02Xh   %-40Bytes %02d-%02d %02fdH3<%((in use)non-operationaloperatioByte %02d: %02Xh   %-40Bytes %02d-%02d %02fdH34%(WVQRVQRAWVQR/var/log/StorageExecutive/mseapiLogFile.@(txt/opt/MicronTechnology/MicronStorageExecu@(tivef/opt/MicronTechnology/MicronStorageExecutive/logs/mseapiLogFile.@@txt/opt/MicronTechnology/MicronStorageExecutive/logs/msejniLogFile.@@txt/opt/MicronTechnology/MicronStorageExecutive/logs/msejniLogFile.@@txt/opt/MicronTechnology/MicronStorageExecutive/logs/mseguiLogFile.@@txt/opt/MicronTechnology/MicronStorageExecutive/logs/mseapiLogFile.@@txt/opt/MicronTechnology/MicronStorageExecutive-Enterprise//opt/MicronTechnology/MicronStorageExecutive-Enterprise/logs/mseapiLogFi@Hle.tf@Lxt/opt/MicronTechnology/MicronStorageExecutive-Enterprise/logs/msejniLogFi@Hle.tf@Lxt/opt/MicronTechnology/MicronFSVTool-FSV//opt/MicronTechnology/MicronOSVTool-OSV//opt/MicronTechnology/MicronStorageExecutivef/etc/blkid.conf/etc/blkid.tf/etc/blkid/blkid.tabesxcli storage filesystem rescan > /dev/null 2>&<:u	

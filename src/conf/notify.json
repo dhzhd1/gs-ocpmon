@@ -4,7 +4,7 @@
       "__doc": "Currently POST is the only method supported, no auth supported",
       "proto": "http",
       "httpMethod" : "POST",
-      "url": "http://yourcompany.com/ocpmon-status-alert",
+      "url": "http://192.168.139.240:5000/alert",
       "security":"NONE"
     },
 
@@ -12,7 +12,7 @@
       "__doc": "Currently V1 is  the only version supported, All of be below fields are mandatory",
       "proto": "snmptrap",
       "version": 1,
-      "traphost" : "trapsink.yourcompany.com",
+      "traphost" : "192.168.139.195",
       "community": "public",
       "enterpriseOid" : "1.3.6.1.4.1.990.1.0.0",
       "genericTrap" : "6",
@@ -27,5 +27,5 @@
       "ldLibraryPath":""
     }
   },
-  "notify": ["SnmpTrap","HTTPPost","ExecHandler"]
+  "notify": ["HTTPPost", "ExecHandler"]
 }

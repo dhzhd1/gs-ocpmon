@@ -1,0 +1,99 @@
+'-u' sub-option should not be mixed with other suboption
+'-J' sub-option should not be mixed with '-c' or -j or -v suboptions
+f Missing firmware directory with -i option
+!du5gff
+f The specified namespace ID does not exist. 
+f Could not format namespaceInvalid Secure Erase Setting!
+f Invalid Protection Info SettingInvalid character, MetaDataSize must contain only in numeric value
+f Invalid character, LbaDataSize must contain only in numeric valuInvalid LBA Format!
+f Must specify either create (-c) or delete (-d) namespace
+f Must specify atleast one sub-option!
+Cannot combine sub-options -c, -d, -l and -S
+f Must specify slcmode (-y) with create (-c) namespace
+f LBA size is not valid!
+Invalid Syntax. The options -p, -i, -a, -o, -u, -v can be specified only with the format (-f) or create (-c) namespace option.
+Invalid Syntax. The options -g, -m , -j, -t can be specified only with format (-f) namespace optionf
+Invalid Secure Erase Setting!
+Invalid Protection Information!
+PI must be enabled if meta-data size is greater than 0 On Linux, the Metadata Status flag is not supported for Metadata sizes greater than 8 On Linux, the Metadata Status flag is only supported for Protection Information values of 1-3.
+Must specify Selftest Both '-b' and '-l' sub-options should be specified together
+Drive is in a TCG Locked state, please unlock or perform PSID revert before attempting any VU operations
+Low Level Format will erase all blocks and format all the bad blocks into the FTL data structures.
+Sanitizing the drive will erase all of it's saved data.
+Erase All Log Data will erase all log data.
+Clear Event Log will clear the event log and reset its counter and total counter to 0.
+Clear Error Log will clear the error log table and reset its counter and total counter to 0.
+f PSID Revert will permanently erase ALL user data! Please backup all data from the drive before proceeding!
+Performing crypto scramble operation will render all user data unreadable.
+Performing NOR Erase operation will render user data unreadable.	
+Clearing panic dump will result in loss of any panic data.
+WARNING: Triggering a panic can cause the system to crash. 
+SuperDM may not return properly. 
+f Secure Erase will remove all the user data.
+WARNING: This drive is part of a logical device, performing this operation may result in corruption of the logical device!
+Low Level Format will take a few minutes to complete. Please wait
+Clear Error Log will take a few minutes to complete. Please wait
+Erase All Log Data will take a few minutes to complete. Please wait
+Crypto scramble is in progress. This process will take a few moments.
+NOR Erase is in progress. This process will take a few moments.
+Secure Erase will take a few minutes to complete. Please wait
+f Low Level Format operation failed
+Sanitize Block Erase failed 
+Erase All Log Data operation failed
+Clear event Log operation failed
+Clear Error Log operation failed
+PSID Revert operation failed
+Crypto Scramble operation failed
+NOR Erase operation failed
+Format Unit operation failed
+Secure Erase operation failed
+f Low Level Format operation completed successfully. 
+Please power cycle he system for setting to take full effect.
+Low Level Format operation completed successfully.
+Sanitize Block Erase Succeeded
+Erase All Log Data operation completed successfully.
+ffClear Event Log operation completed successfully
+Clear Error Log operation completed successfully
+PSID Revert completed successfully
+Crypto Scramble operation completed successfully
+NOR Erase operation completed successfully.
+Format Unit operation completed successfully
+f PSID Revert will take a few seconds to complete.
+Format Unit will remove all the user data.
+WARNING: This drive is part of a logical device, performing this operation may result in corruption of the logical device!
+Drive information is retrieved successfully
+Listing the drive information failed
+Listing the detailed drive information is retrieved successfully
+Listing the detailed drive information faile
+f PCIe information is retrieved successfully
+Getting the PCIe information failed
+Drive details in JSON format are retrieved successfully
+Getting the drive information failed
+Drive details in JSON format are retrieved and saved successfully in the specified json file
+Getting the drive information failed
+Firmware slot information retrieved successfully
+Getting the firmware slot information is failed
+Drive information is retrieved successfully
+Listing the drive information failed
+"msecliStatus":
+NA
+Drive is in good health
+Attention! The Drive is Approaching the end of the Specified Lifetime. Prolonged usage will invalidate the warranty
+Attention! The Drive is now in Write Protect(Read Only) Mode. Any pending data should be saved to another storage device
+Attention! Drive is in thermal shutdown. Please power off system and allow drive to cool before restarting.
+Attention! Drive is in security locked state
+Attention! Drive's on board capacitor has failed, drive is now in Write Protect(Read Only) Mode.
+Attention! Drive has met or exceeded a SMART threshold!
+Attention! Drive has met or exceeded multiple SMART Thresholds!
+Attention! Drive has met multiple Critical Warnings!
+Attention! Drive is in Write Protect (Read Only) Mode due to degraded device reliability
+Attention! Drive temperature is either above or below the temperature threshold.
+Attention! Drive is in Write Protect (Read Only) Mode due to degraded device reliability
+Attention! Drive is in Write Protect (Read Only) Mode due to degraded device reliability
+Attention! Drive is in Write Protect (Read Only) Mode due to degraded device reliability!
+Attention! Drive is in Write Protect (Read Only) Mode due to low available free space!
+Attention! Drive is in Write Protect (Read Only) Mode due to low available free space
+Attention! Drive temperature is either above or below the temperature threshold.
+Attention! Drive temperature is either above or below the temperature threshold.
+Attention! Drive volatile memory backup device failed.
+

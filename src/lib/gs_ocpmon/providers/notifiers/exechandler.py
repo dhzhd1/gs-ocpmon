@@ -30,7 +30,7 @@ class ExecHandler(object):
             return misc.json_file_to_dict(configFile)
         except IOError as e:
             logger.info("IOError loading Config file : {0}".format(e))
-            print "IOError loading Config File"
+            print("IOError loading Config File")
 
     @classmethod
     def notify (cls,message, severity, alertgroup=None,alerttype='http',installer=None,category=None, platform='UNIX', division=None, bu=None, vars_list=None):

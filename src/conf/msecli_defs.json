@@ -1,0 +1,77 @@
+{
+    "cmd_alias":"msecli",
+    "path":"",
+    "ld_library_path":"",
+    "cmdline":"msecli",
+    "commands":{
+        "health":{
+            "args":"-L -d",
+            "label":"Print drives health information",
+            "type":"exitcode",
+            "monitors":{
+                "lifetime_left":{
+                    "label":"SSD Life Left",
+                    "type":"life_thresholds"
+                },
+                "drive_temperature":{
+                    "label":"Drive Temperature",
+                    "type":"temp_thresholds"
+                },
+                "drive_status":{
+                    "label":"Drive Status",
+                    "type":"status"
+                }
+            },
+            "default_stash":{
+                "lifetime_left": ["100"],
+                "drive_status": ["Drive is in good health"],
+                "drive_temperature": ["40"]
+            }
+        },
+        "info":{
+            "args":"-L",
+            "label":"Print drives basic information",
+            "type":"exitcode",
+            "monitors":{
+                "model_name":{
+                    "label":"Drive Model",
+                    "type":"exitcode"
+                },
+                "serial_no":{
+                    "label":"Drive Serial Number",
+                    "type":"exitcode"
+                },
+                "fw_rev":{
+                    "label":"Firmware Version",
+                    "type":"exitcode"
+                }
+            }
+        }
+    },
+    "status_value_map":{
+        "Drive is in good health": "Informational",
+        "Drive near TBW": "Warning",
+        "Drive at TBW": "Critical",
+        "Drive near write protect": "Warning",
+        "Drive in write protect": "Warning",
+        "Drive in thermal shutdown": "Critical",
+        "Drive in security locked state": "Critical",
+        "Drive is in write protect mode due to failed backup power": "Critical",
+        "Drive is busy": "Warning"
+    },
+    "thresholds":{
+        "Informational": [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65],
+        "Warning": [70, 75],
+        "Critical": [80, 85, 90, 95, 100]
+    },
+    "temp_thresholds":{
+        "Informational": [0, 60],
+        "Warning": [61, 75],
+        "Critical": [76, 100]
+    },
+    "life_thresholds": {
+        "Informational": [100, 60],
+        "Warning": [59, 10],
+        "Critical": [9, 0]
+    }
+}

@@ -17,7 +17,7 @@ import os
 import re
 import csv
 import sys
-import StringIO
+from io import StringIO
 import logging
 
 from . import misc

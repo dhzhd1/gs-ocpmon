@@ -1,0 +1,21 @@
+Device Name          : vmhba5
+Total Size           : 3840.00GB
+OS Device            : t10.NVMe____Micron_9300_MTFDHAL3T8TDP_______________8D1B10220175A000
+PCIe Link Speed      : 8.0 GT/s
+Drive Status         : Drive is in good health
+WriteBufferEnabled   : Not Supported
+Power Limit Value    : 25
+Est. Life Remaining  : 100%
+Current Temp. (C)    : 40
+Temp. Threshold (C)  : 75
+VPD SMBUS            : Enabled
+NVME SMBUS           : Enabled
+
+Listing the detailed drive information is retrieved successfully
+CMD_STATUS   : Success
+STATUS_CODE  : 0
+
+Copyright (C) 2019 Micron Technology, Inc.
+
+
+

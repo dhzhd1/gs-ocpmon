@@ -1,0 +1,74 @@
+{
+  "driveStatusInformational Asserted": {
+    "camel": "driveStatusInformational",
+    "id": 6000
+  },
+  "driveStatusInformational Deasserted": {
+    "camel": "driveStatusInformational",
+    "id": 6001
+  },
+  "driveStatusWarning Asserted": {
+    "camel": "driveStatusWarning",
+    "id": 6002
+  },
+  "driveStatusWarning Deasserted": {
+    "camel": "driveStatusWarning",
+    "id": 6003
+  },
+  "driveStatusCritical Asserted": {
+    "camel": "driveStatusCritical",
+    "id": 6004
+  },
+  "driveStatusCritical Deasserted": {
+    "camel": "driveStatusCritical",
+    "id": 6005
+  },
+  "driveTemperatureInformational Asserted": {
+    "camel": "driveTemperatureInformational",
+    "id": 6006
+  },
+  "driveTemperatureInformational Deasserted": {
+    "camel": "driveTemperatureInformational",
+    "id": 6007
+  },
+  "driveTemperatureWarning Asserted": {
+    "camel": "driveTemperatureWarning",
+    "id": 6008
+  },
+  "driveTemperatureWarning Deasserted": {
+    "camel": "driveTemperatureWarning",
+    "id": 6009
+  },
+  "driveTemperatureCritical Asserted": {
+    "camel": "driveTemperatureCritical",
+    "id": 6010
+  },
+  "driveTemperatureCritical Deasserted": {
+    "camel": "driveTemperatureCritical",
+    "id": 6011
+  },
+  "ssdLifeLeftInformational Asserted": {
+    "camel": "ssdLifeLeftInformational",
+    "id": 6012
+  },
+  "ssdLifeLeftInformational Deasserted": {
+    "camel": "ssdLifeLeftInformational",
+    "id": 6013
+  },
+  "ssdLifeLeftWarning Asserted": {
+    "camel": "ssdLifeLeftWarning",
+    "id": 6014
+  },
+  "ssdLifeLeftWarning Deasserted": {
+    "camel": "ssdLifeLeftWarning",
+    "id": 6015
+  },
+  "ssdLifeLeftCritical Asserted": {
+    "camel": "ssdLifeLeftCritical",
+    "id": 6016
+  },
+  "ssdLifeLeftCritical Deasserted": {
+    "camel": "ssdLifeLeftCritical",
+    "id": 6017
+  }
+}
